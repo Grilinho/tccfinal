@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo muito escuro */
+    color: #e0e0e0; /* Texto em cinza claro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1c1c1c; /* Cinza escuro */
+    color: #e0e0e0; 
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo-container {
+    margin-left: 20px; 
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-right: 20px; 
+}
+
+.menu li {
+    margin: 0 15px; 
+}
+
+.menu a {
+    color: #e0e0e0; /* Texto dos links */
+    text-decoration: none;
+    position: relative; /* Para efeitos */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse */
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    gap: 20px; 
+}
+
+.philosopher {
+    flex: 1; 
+    padding: 20px;
+    background: #1c1c1c; /* Cinza escuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.philosopher h1 {
+    font-size: 2.5em; /* Aumenta o tamanho do título principal */
+}
+
+.philosopher-image {
+    width: 80%; /* Reduzir a largura da imagem */
+    max-width: 300px; /* Limitar a largura máxima */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-top: 15px; /* Espaço acima da imagem */
+}
+
+.resources {
+    flex: 1; 
+    padding: 20px;
+    background: #1c1c1c; /* Cinza escuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+    max-height: 300px; /* Altura máxima da área de vídeos */
+    overflow-y: auto; /* Ativa a rolagem vertical */
+    background: #1c1c1c; /* Fundo da área de vídeos */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço abaixo da área de vídeos */
+}
+
+/* Estilizando o scrollbar */
+.video-container::-webkit-scrollbar {
+    width: 8px; /* Largura do scrollbar */
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background: #444; /* Cor do botão do scrollbar */
+    border-radius: 10px; /* Bordas arredondadas no botão */
+}
+
+.video-container::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Cor do botão ao passar o mouse */
+}
+
+.video-links {
+    display: flex;
+    flex-direction: column; /* Alinha vídeos verticalmente */
+    gap: 10px; /* Espaçamento entre vídeos */
+}
+
+.video-links a {
+    display: flex; /* Flex para alinhar miniatura e informações */
+    align-items: center; /* Alinha a miniatura e o texto */
+    text-decoration: none;
+    color: #e0e0e0; 
+}
+
+.video-thumbnail {
+    width: 120px; /* Largura da miniatura */
+    height: auto; /* Mantém a proporção */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-right: 10px; /* Espaço entre a miniatura e o texto */
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column; /* Alinha título e descrição verticalmente */
+}
+
+.material-buttons {
+    display: flex;
+    flex-direction: column; /* Alinha botões verticalmente */
+    gap: 10px; /* Espaçamento entre botões */
+}
+
+.material-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #333; /* Fundo dos botões */
+    color: #e0e0e0; /* Texto dos botões */
+    text-align: center;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background 0.3s; /* Efeito de transição */
+}
+
+.material-button:hover {
+    background: #444; /* Muda a cor do botão ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #222; /* Cinza escuro */
+    color: #E0E0E0;
+    position: fixed;  /* Altera para fixed para ficar fixo na parte inferior */
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Garante que o footer fique sobreposto a outros elementos, se necessário */
+}

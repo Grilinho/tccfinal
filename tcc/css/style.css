@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Fundo ainda mais escuro */
+    color: #e0e0e0; /* Texto mais claro para contraste */
+}
+
+header {
+    background-color: #000;
+    padding: 35px 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+.slider {
+    position: relative; 
+    height: 400px; 
+    background-color: #868485; 
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute; 
+    right: 0; 
+    width: 65%; 
+    height: auto;
+    max-width: 850px; /* Limita a largura máxima para 850px */
+    max-height: 466px; /* Limita a altura máxima para 466px */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    overflow: hidden; /* Corta a imagem se necessário */
+}
+
+.sobre {
+    padding: 30px;
+    text-align: center;
+    background-color: #222; /* Fundo da seção "Sobre" mais escuro */
+    margin: 20px auto; /* Centraliza a seção */
+    border-radius: 12px; /* Cantos mais arredondados */
+    max-width: 800px; /* Limita a largura */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
+}
+
+.sobre h2 {
+    margin-bottom: 15px;
+    color: #ffa500; 
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 10px 0; 
+}
+
+.chatbot-container {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px; /* Limita a largura */
+}
+
+.chatbot {
+    background-color: #1c1c1c; /* Fundo do chatbot mais escuro */
+    padding: 20px;
+    border-radius: 12px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Sombra mais suave */
+    margin: 20px 0; /* Espaço ao redor do chatbot */
+}
+
+.chatbot-container h2 {
+    color: #ffa500; /* Cor do título da seção do chatbot */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.chatbot-container p {
+    color: #e0e0e0; /* Texto do parágrafo em cor mais clara */
+    font-size: 1rem;
+    margin-top: 10px; /* Espaçamento acima do parágrafo */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+}

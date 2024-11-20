@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818; /* Fundo escuro */
+    color: #E0E0E0; /* Texto claro */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre a logo e o menu */
+    align-items: center;
+    padding: 1em 2em;
+    background: #222; /* Cinza escuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    margin-left: auto; /* Move a logo para a direita */
+    margin-right: 20px; /* Adiciona espaço à direita da logo */
+}
+
+.menu {
+    text-align: right; /* Alinha o menu à direita */
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Dourado */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.menu ul li a:hover {
+    color: #FFFFFF; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumento */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    padding: 20px;
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+    flex: 1 1 30%; /* Cada card ocupará aproximadamente 30% da largura, ajustando conforme o espaço disponível */
+    max-width: 300px; /* Limite máximo de largura para os cards */
+    background: #2C2C2C;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.study-button {
+    background: #656565; /* Vermelho escuro */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.study-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%; /* Amplitude da onda */
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2); /* Leve brilho */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Começa invisível */
+    transition: transform 0.5s ease-out;
+}
+
+.study-button:hover::after {
+    transform: translate(-50%, -50%) scale(1); /* Expande ao passar o mouse */
+}
+
+.study-button:hover {
+    background: #616161; /* Vermelho mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+.study-button:focus {
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.study-button:active::after {
+    transform: translate(-50%, -50%) scale(1); /* Ativa a onda ao clicar */
+}
+
+.study-button:active {
+    background: #616161; /* Vermelho ainda mais escuro ao clicar */
+    transform: scale(0.95); /* Levemente reduzido */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #222; /* Cinza escuro */
+    color: #E0E0E0;
+    position: fixed;  /* Altera para fixed para ficar fixo na parte inferior */
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Garante que o footer fique sobreposto a outros elementos, se necessário */
+}
